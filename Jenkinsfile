@@ -1,7 +1,10 @@
 pipeline {
     agent any
+    environment {
+        PATH = "/opt/apache-maven-3.10/bin:$PATH"
+    }
     tools {
-        maven 'Maven 3.10'
+        maven 'maven-3.10'
         jdk 'jdk8'
     }
     stages {
