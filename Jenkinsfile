@@ -1,10 +1,8 @@
 pipeline {
     agent any
-    environment {
-        PATH = "/usr/bin:$PATH"
-    }
+
     tools {
-        maven 'maven-3.10'
+        maven 'maven-3.8.1'
         jdk 'jdk8'
     }
     stages {
